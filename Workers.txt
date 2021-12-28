@@ -1,0 +1,2 @@
+Name		Age		Phone		Address		Nationality		Gender		JobTitle
+Ali		30		01111		Cairo		Egyption		Male		A
