@@ -3,14 +3,14 @@ package fci;
 
 public class StudentGenrator extends Student {
     
-    protected int TotalGrades;
-    protected int RateHours;
+    protected double TotalGrades;
+    protected double RateHours;
     
     //Constractor
     
     public StudentGenrator() {}
     
-    public StudentGenrator(String Name, int Age, String Phone, String Address, String Nationality, Gender gender, int Level, String Spechialized, int TotalGrades, int RateHours) {
+    public StudentGenrator(String Name, int Age, String Phone, String Address, String Nationality, Gender gender, int Level, String Spechialized, double TotalGrades, double RateHours) {
         super(Name, Age, Phone, Address, Nationality, gender, Level, Spechialized);
         this.TotalGrades = TotalGrades;
         this.RateHours = RateHours;
@@ -19,11 +19,11 @@ public class StudentGenrator extends Student {
 
     //Setter
     
-    public void setTotalGrades(int TotalGrades) {
+    public void setTotalGrades(double TotalGrades) {
         this.TotalGrades = TotalGrades;
     }
 
-    public void setRateHours(int RateHours) {
+    public void setRateHours(double RateHours) {
         this.RateHours = RateHours;
     }
     
@@ -59,7 +59,8 @@ public class StudentGenrator extends Student {
     @Override
     public void Print() {
         super.Print();
-        System.out.println(this.getGPA());
+        System.out.printf("%.2f", this.getGPA());
+        System.out.println("\n");
     }
 
     @Override
