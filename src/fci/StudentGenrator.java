@@ -59,8 +59,7 @@ public class StudentGenrator extends Student {
     @Override
     public void Print() {
         super.Print();
-        System.out.printf("%.2f", this.getGPA());
-        System.out.println("\n");
+        System.out.printf("%.2f\n", this.getGPA());
     }
 
     @Override

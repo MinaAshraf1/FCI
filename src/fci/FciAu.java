@@ -33,6 +33,21 @@ public class FciAu {
         PersonDetalis.remove(p);
     }
     
+    public void SearchPerson(int i) {
+        if(PersonDetalis.get(i) instanceof Administrator)
+            ((Administrator)PersonDetalis.get(i)).Print();
+        else if(PersonDetalis.get(i) instanceof Instructors)
+                ((Instructors)PersonDetalis.get(i)).Print();
+        else if(PersonDetalis.get(i) instanceof StudentGenrator)
+            ((StudentGenrator)PersonDetalis.get(i)).Print();
+        else if(PersonDetalis.get(i) instanceof StudentUnGenerator)
+            ((StudentUnGenerator)PersonDetalis.get(i)).Print();
+        else if(PersonDetalis.get(i) instanceof Technicals)
+            ((Technicals)PersonDetalis.get(i)).Print();
+        else if(PersonDetalis.get(i) instanceof Workers)
+            ((Workers)PersonDetalis.get(i)).Print();
+    }
+                
     public int PersonCount() {
         return PersonDetalis.size();
     }
