@@ -63,7 +63,7 @@ public abstract class Student extends Person implements Print{
     @Override
     public void Print() {
         super.Print();
-        System.out.print(this.getLevel() + "\t" + this.getSpechialized() + "\t" + this.getGPA() + "\t");
+        System.out.print(this.getLevel() + "\t" + this.getSpechialized() + "\t\t");
     }
 
     @Override

@@ -11,7 +11,7 @@ public class StudentUnGenerator extends Student {
 
     public StudentUnGenerator(String Name, int Age, String Phone, String Address, String Nationality, Gender gender, int Level, String Spechialized, double TotalGrades) {
         super(Name, Age, Phone, Address, Nationality, gender, Level, Spechialized);
-        GPA = TotalGrades;
+        this.TotalGrades = TotalGrades;
     }
 
     //SETTER
@@ -23,8 +23,7 @@ public class StudentUnGenerator extends Student {
     //GETTER
     
     public double getGPA() {
-        GPA = TotalGrades;
-        return GPA;
+        return TotalGrades;
     }
     
     //Enter
@@ -48,7 +47,7 @@ public class StudentUnGenerator extends Student {
     
     @Override
     public String toString() {
-        return super.toString() + "\t\t" + GPA;
+        return super.toString() + "\t\t" + this.getGPA();
     }
 
 }

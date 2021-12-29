@@ -32,8 +32,7 @@ public class StudentGenrator extends Student {
     @Override
     public double getGPA() {
         try {
-        GPA = TotalGrades / RateHours;
-        return GPA;
+        return TotalGrades / RateHours;
         } catch(ArithmeticException e) {
             System.out.print("Enter valid hour");
             return 0;
@@ -66,7 +65,7 @@ public class StudentGenrator extends Student {
     @Override
     public String toString() {
         
-        return super.toString() + "\t\t" + GPA;
+        return super.toString() + "\t\t" + this.getGPA();
     }
     
 }
