@@ -32,6 +32,7 @@ public class Administrator extends Person implements Print{
     public void EnterData() {
         try {
         super.EnterData();
+        System.out.println("Enter Your JobTitle");
         JobTitle = in.next();
         } catch(Exception e) {
             System.out.println("Enter Valid Data");

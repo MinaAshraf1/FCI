@@ -109,6 +109,12 @@ public class Person implements PersonInterface{
             Address = in.next();
             System.out.println("Enter Your Nationality : ");
             Nationality = in.next();
+            System.out.println("Press 1 to Male,\nPress 2 to Female");
+            int n = in.nextInt();
+            if(n == 1)
+                gender = Gender.Male;
+            else
+                gender = Gender.Female;
         } catch(Exception e) {
             System.out.println("Enter Valid Data");
         }

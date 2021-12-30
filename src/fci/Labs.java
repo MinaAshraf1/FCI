@@ -9,7 +9,7 @@ public class Labs implements Print{
     
     protected String LabName;
     protected int NumOfDevice;
-
+    
     //CONSTRACTOR
     
     public Labs() {
@@ -52,7 +52,7 @@ public class Labs implements Print{
             System.out.println("Enter Valid Data");
         }
     }
-    
+
     //PRINT
     
     public void Print() {
@@ -63,5 +63,7 @@ public class Labs implements Print{
     public String toString() {
         return  LabName + "\t\t" +  NumOfDevice ;
     }
+    
+    
   
 }

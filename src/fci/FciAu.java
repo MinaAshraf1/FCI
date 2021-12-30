@@ -2,11 +2,17 @@
 package fci;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class FciAu {
+    
+    Scanner in = new Scanner(System.in);
+    
     protected int TypeNo;
     protected String TypeName;
     ArrayList<Person> PersonDetalis;
+    
+    //Constractor
     
     public FciAu() {    
     }
@@ -17,6 +23,8 @@ public class FciAu {
         PersonDetalis = new ArrayList<Person>();
     }
 
+    //Setter
+    
     public void setTypeNo(int TypeNo) {
         this.TypeNo = TypeNo;
     }
@@ -25,15 +33,24 @@ public class FciAu {
         this.TypeName = TypeName;
     }
 
+    //Add
+    
     public void AddPerson(Person p) {
         PersonDetalis.add(p);
     }
+    
+    //Remove
     
     public void RemovePerson(Person p) {
         PersonDetalis.remove(p);
     }
     
-    public void SearchPerson(int i) {
+    //Search
+    
+    public void SearchPerson() {
+        System.out.println("Enter no of person");
+        int i = in.nextInt();
+        i = i-1;
         if(PersonDetalis.get(i) instanceof Administrator)
             ((Administrator)PersonDetalis.get(i)).Print();
         else if(PersonDetalis.get(i) instanceof Instructors)
@@ -84,5 +101,7 @@ public class FciAu {
             else if(PersonDetalis.get(i) instanceof Workers)
                 ((Workers)PersonDetalis.get(i)).Print();
         }
+        
     }
+    
 }

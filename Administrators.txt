@@ -1,3 +1,6 @@
+
+				Administrator
 Name		Age		Phone		Address		Nationality		Gender		JobTitle
 Ali		59		01234		Assuit		Egyption		Male		Master
 Mona		59		01235		Assuit		Egyption		Female		Master
+Ahmed		56		01212		Assuit		Egyptian		Male		Admin
