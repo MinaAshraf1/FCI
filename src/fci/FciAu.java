@@ -48,6 +48,7 @@ public class FciAu {
     //Search
     
     public void SearchPerson() {
+        try {
         System.out.println("Enter no of person");
         int i = in.nextInt();
         i = i-1;
@@ -63,6 +64,9 @@ public class FciAu {
             ((Technicals)PersonDetalis.get(i)).Print();
         else if(PersonDetalis.get(i) instanceof Workers)
             ((Workers)PersonDetalis.get(i)).Print();
+        } catch(IndexOutOfBoundsException e) {
+            System.out.println("No Person");
+        }
     }
                 
     public int PersonCount() {
