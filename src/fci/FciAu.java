@@ -14,7 +14,8 @@ public class FciAu {
     
     //Constractor
     
-    public FciAu() {    
+    public FciAu() {
+        ArrayList<Person> PersonDetails = new ArrayList<Person>();
     }
     
     public FciAu(int TypeNo, String TypeName) {
@@ -107,5 +108,5 @@ public class FciAu {
         }
         
     }
-    
+
 }
