@@ -55,6 +55,7 @@ public class Labs implements Print{
 
     //PRINT
     
+    @Override
     public void Print() {
         System.out.println(LabName + "\t" + NumOfDevice);
     }
